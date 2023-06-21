@@ -1,0 +1,111 @@
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Retos JavaScipt</title>
+    <link rel="stylesheet" media="all" href="css/style.css" />
+    
+</head>
+<body>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+
+    <form class="form" id="form" novalidate>
+        <label for="tipoDocumento">Tipo de documento:</label>
+        <select id="tipoDocumento" name="tipoDocumento" required>
+            <option value="0">Seleccionar...</option>
+            <option value="1">Cedula De Ciudadania</option>
+            <option value="2">Tarjeta De Identidad</option>
+            <option value="3">Pasaporte</option>
+            <option value="4">Cedula Extranjera</option>
+        </select>
+        <br><br>
+        
+        <div id="CampoNumeroDoc">
+        <label for="NumeroDoc">No. Documento:</label>
+        <input type="number" id="NumeroDoc" name="NumeroDoc" placeholder="Ingrese Su Numero De Documento" pattern="[0-9]{5,}" title="Por favor, ingrese un número válido de al menos 5 dígitos." required>
+        <br><br>
+        <div class="feedback"></div>
+    </div>
+
+    <div id="CampoNombre">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese Su Nombre" pattern="[A-Za-z0-9\s]+" title="Por favor, ingrese un nombre válido alfanumérico." required>
+        <br><br>
+        <div class="feedback"></div>
+    </div>
+
+    <div id="CampoApellido">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese Su Apellido" pattern="[A-Za-z0-9\s]+" title="Por favor, ingrese un apellido válido alfanumérico." required>
+        <br><br>
+        <div class="feedback"></div>
+    </div>
+
+    <div id="CampoFechaDeNacimiento">
+        <label for="FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="FechaNacimiento" name="FechaNacimiento" required>
+        <br><br>
+        <div class="feedback"></div>
+    </div>
+
+    <div id="CampoEmail">
+        <label for="Email">Correo Electrónico:</label>
+        <input type="email" id="Email" name="Email" placeholder="Ingrese Su Correo Electrónico" pattern="[a-zA-Z0-9._%+-]+@misena\.edu\.co" title="Por favor, ingrese un correo válido con el dominio @misena.edu.co" required>
+        <div class="feedback"></div>
+        <br><br>
+    </div>
+
+    <div id="CampoPassword">
+        <label for="Password">Contraseña:</label>
+        <input type="password" id="Password" name="Password" placeholder="Ingrese Su Contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{10,}$" title="La contraseña debe contener al menos una letra mayúscula, una letra minúscula, un número, un carácter especial y tener una longitud mínima de 10 caracteres." required>
+        <br><br>
+        <div class="feedback"></div>
+    </div>
+
+    <div id="CampoComprobar">
+        <label for="Compassword">Confirmar Contraseña:</label>
+        <input type="password" id="Compassword" name="Compassword" placeholder="Vuelva a Escribir Su Contraseña" required>
+        <br><br>
+        <div class="feedback"></div>
+    </div>
+
+    <div id="CampoTerminos">
+        <label for="Terminos">Aceptar Términos de Uso:</label>
+        <input type="checkbox" id="Terminos" name="Terminos" required>
+        <br><br>
+        <div class="feedback"></div>
+    </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <a href="retos.html" class="ov-btn-grow-skew">Volver</a>
+
+</div>
+
+<!--Modal-->
+<div id="myModal1" class="modal1">
+    <div class="modal-content1">
+        <span class="close1">X</span>
+        <h2>Terminos De Uso</h2>
+        <p>Hola Como Esta</p>
+
+        <button type="submit" id="Aceptar" class="ov-btn-grow-skew">Aceptar</button>
+        <button type="submit" id="Rechazar" class="ov-btn-grow-skew">Rechazar</button>
+    </div>
+</div>
+
+<div class="resultado"></div>
+<script type="text/javascript" src="js/reto7.js"></script>
+
+</body>
+</html>

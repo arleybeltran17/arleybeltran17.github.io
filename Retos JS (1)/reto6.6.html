@@ -1,0 +1,212 @@
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="es">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reto 6 JavaScipt</title>
+  <link rel="stylesheet" media="all" href="css/cards.css" />
+  <link rel="stylesheet" media="all" href="css/style.css" />
+</head>
+<body>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<body>
+
+  <section class="card">
+      <div class="card--img">
+          <img src="img/circulo.png" alt="" width="150px" height="150px">
+      </div>
+      <div class="card--info">
+          <p class="card--subtittle">Circulo</p>
+          <button type="submit" id="areacirculo" class="ov-btn-grow-skew" > Area</button>
+          <button type="submit" id="perimetrocirculo" class="ov-btn-grow-skew">Perimetro</button>
+      </div>
+  </section>
+
+  <section class="card">
+      <div class="card--img">
+          <img src="img/cuadrado.png" alt="" width="150px" height="150px">
+      </div>
+      <div class="card--info">
+          <p class="card--subtittle">Cuadrado</p>
+          <button type="submit" id="areacuadrado" class="ov-btn-grow-skew" > Area</button>
+          <button type="submit" id="perimetrocuadrado" class="ov-btn-grow-skew">Perimetro</button>
+      </div>
+  </section>
+
+  <section class="card">
+      <div class="card--img">
+          <img src="img/triangulo.png" alt=""  width="175px" height="175px">
+      </div>
+      <div class="card--info">
+          <p class="card--subtittle">Triangulo</p>
+          <button type="submit" id="areatriangulo" class="ov-btn-grow-skew" > Area</button>
+          <button type="submit" id="perimetrotriangulo" class="ov-btn-grow-skew">Perimetro</button>
+      </div>
+  </section>
+
+  <section class="card">
+      <div class="card--img">
+          <img src="img/rectangulo.png" alt="" width="150px" height="150px">
+      </div>
+      <div class="card--info">
+          <p class="card--subtittle">Rectangulo</p>
+          <button type="submit" id="arearectangulo" class="ov-btn-grow-skew" > Area</button>
+          <button type="submit" id="perimetrorectangulo" class="ov-btn-grow-skew">Perimetro</button>
+      </div>
+  </section>
+
+    <a href="retos.html" class="ov-btn-grow-skew">Volver</a>
+  </div>
+</body>
+  <!-- ---------------------------------Modal Circulo(Area)--------------------------------- -->
+  <div id="myModal1" class="modal1">
+    <div class="modal-content1">
+      <span class="close1">X</span>
+      <h2>Calcular Area De Un Circulo</h2>
+      <label for="area">Area</label>
+      <input type="text" id="AreaCirculo" name="AreaCirculo" placeholder="Ingrese El Radio Del Circulo">
+      <br><br>
+      <button id="btncal" class="ov-btn-grow-skew">Calcular</button>
+      
+    </div>
+  </div>
+<!-- ---------------------------------Modal Circulo(Perimetro)--------------------------------- -->
+
+  <div id="myModal2" class="modal2">
+    <div class="modal-content2">
+      <span class="close2">X</span>
+      <h2>Calcular Perimetro De Un Circulo</h2>
+      <label for="perimetro">Perimetro</label>
+      <input type="text" id="PerimetroCirculo" name="Perimetrocirculo" placeholder="Ingrese El Diametro Circulo">
+      <br><br>
+      <button id="btncal2" class="ov-btn-grow-skew">Calcular</button>
+      
+    </div>
+  </div>
+
+  <!-- ---------------------------------Modal Cuadrado(Are)--------------------------------- -->
+<div id="myModal3" class="modal3">
+  <div class="modal-content3">
+    <span class="close3">X</span>
+    <h2>Calcular Area De Un Cuadrado</h2>
+    <label for="areaCu">Area</label>
+    <input type="text" id="AreaCuadrado" name="AreaCudrado" placeholder="Ingrese La Longitud De Un Lado Del Cuadrado">
+    <br><br>
+    <button id="btncal3" class="ov-btn-grow-skew">Calcular</button>
+    
+  </div>
+</div>
+
+<!-- ---------------------------------Modal Cuadrado(Perimetro)--------------------------------- -->
+<div id="myModal4" class="modal4">
+  <div class="modal-content4">
+    <span class="close4">X</span>
+    <h2>Calcular Perimetro De Un Cuadrado</h2>
+
+    <label for="PerimetroCu">Lado1</label>
+    <input type="text" id="ladoc1" name="ladoc1" placeholder=" Ingrese La Longitud Del Primer Lado">
+
+    <label for="PerimetroCu">Lado2</label>
+    <input type="text" id="ladoc2" name="ladoc2" placeholder="Ingrese La Longitud Del Segundo Lado">
+    
+
+    <label for="PerimetroCu">Lado3</label>
+    <input type="text" id="ladoc3" name="ladoc3" placeholder="Ingrese La Longitud Del Tercer Lado">
+
+    <label for="PerimetroCu">Lado4</label>
+    <input type="text" id="ladoc4" name="ladoc4" placeholder="Ingrese La Longitud Del Cuarto Lado">
+    <br><br>
+    <button id="btncal4" class="ov-btn-grow-skew">Calcular</button>
+    
+  </div>
+</div>
+<!-- ---------------------------------Modal Triangulo(Area)--------------------------------- -->
+<div id="myModal5" class="modal5">
+  <div class="modal-content5">
+    <span class="close5">X</span>
+    <h2>Calcular Area De Un Triangulo</h2>
+
+    <label for="AreaTri">Base</label>
+    <input type="text" id="base" name="base" placeholder=" Ingrese La Base Del Triangulo">
+
+    <label for="AreaTri">Altura</label>
+    <input type="text" id="altura" name="altura" placeholder="Ingrese La Altura Del Triangulo">
+    <br><br>
+
+    <button id="btncal5" class="ov-btn-grow-skew">Calcular</button>
+  </div>
+</div>
+<!-- ---------------------------------Modal Triangulo(Perimetro)--------------------------------- -->
+<div id="myModal6" class="modal6">
+  <div class="modal-content6">
+    <span class="close6">X</span>
+    <h2>Calcular Perimetro De Un Triangulo</h2>
+
+    <label for="PerimetroTri">Lado1</label>
+    <input type="text" id="ladoT1" name="ladoc1" placeholder=" Ingrese La Longitud Del Primer Lado">
+
+    <label for="PerimetroTri">Lado2</label>
+    <input type="text" id="ladoT2" name="ladoc2" placeholder="Ingrese La Longitud Del Segundo Lado">
+    
+
+    <label for="PerimetroTri">Lado3</label>
+    <input type="text" id="ladoT3" name="ladoc3" placeholder="Ingrese La Longitud Del Tercer Lado">
+    <br><br>
+    <button id="btncal6" class="ov-btn-grow-skew">Calcular</button>
+    
+  </div>
+</div>
+<!-- ---------------------------------Modal Rectangulo(Area)--------------------------------- -->
+<div id="myModal7" class="modal7">
+  <div class="modal-content7">
+    <span class="close7">X</span>
+    <h2>Calcular Area De Un Triangulo</h2>
+    <label for="AreaRec">Base</label>
+    <input type="text" id="ancho" name="ancho" placeholder=" Ingrese La Ancho Del Rectangulo">
+
+    <label for="AreaRec">Altura</label>
+    <input type="text" id="largo" name="largo" placeholder="Ingrese El Largo Del Rectangulo">
+    <br><br>
+
+    <button id="btncal7" class="ov-btn-grow-skew">Calcular</button>
+    
+  </div>
+</div>
+<!-- ---------------------------------Modal Rectangulo(Perimetro)--------------------------------- -->
+<div id="myModal8" class="modal8">
+  <div class="modal-content8">
+    <span class="close8">X</span>
+    <h2>Calcular Perimetro De Un Rectangulo</h2>
+
+    <label for="PerimetroRec">Lado1</label>
+    <input type="text" id="ladoR1" name="ladoR1" placeholder=" Ingrese La Longitud Del Primer Lado">
+
+    <label for="PerimetroRec">Lado2</label>
+    <input type="text" id="ladoR2" name="ladoR2" placeholder="Ingrese La Longitud Del Segundo Lado">
+    
+
+    <label for="PerimetroRec">Lado3</label>
+    <input type="text" id="ladoR3" name="ladoR3" placeholder="Ingrese La Longitud Del Tercer Lado">
+
+    <label for="PerimetroRec">Lado4</label>
+    <input type="text" id="ladoR4" name="ladoR4" placeholder="Ingrese La Longitud Del Cuarto Lado">
+    <br><br>
+
+    <button id="btncal8" class="ov-btn-grow-skew">Calcular</button>
+    
+  </div>
+</div>
+
+<div class="resultado"></div>
+
+  <script type="text/javascript" src="js/reto6.js"></script>
+</body>
+</html>
+
